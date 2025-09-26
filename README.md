@@ -1,4 +1,4 @@
-# lacosDeRepeticao
+# Laços de Repeticao
 
 
 atividade Proposta em sala, contém 4 exercicios,um deles já foi resolvido em sala, enquanto os outros ainda estão para resolver;
