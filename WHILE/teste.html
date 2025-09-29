@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let condicao, operador, n1, n2;
+        condicao=prompt('digite S para iniciar a calculadora');
+
+        while(condicao=="s" || condicao == "S"){
+            operador = prompt("Digite o operador matemático" + 
+            "\n +. Adição"+
+            "\n x. multiplicação"+
+            "\n /. divisão"+
+            "\n %. resto da divisão'"
+        )
+
+            n1 = parseInt(prompt('digite o primeiro numero'))
+            n2 = parseInt(prompt('digite o segundo numero'))
+            while(operador == '+'){
+                    alert(n1+n2)
+                    operador="";
+            }
+
+            while(operador == '-'){
+                 alert(n1-n2)
+                 operador="";
+            }
+
+            while(operador == 'x'){
+                 alert(n1*n2)
+                 operador="";
+            }
+
+            while(operador == '/'){
+                 alert(n1/n2)
+                 operador="";
+                
+            }
+
+            while(operador == '%'){
+
+                 alert(n1%n2)
+                 operador="";
+                
+            }
+            condicao=prompt('digite s se quer continuar na calculadora')
+        }
+
+
+
+
+    </script>
+</body>
+</html>
