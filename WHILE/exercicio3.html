@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let repetir, inicio, i, resultado;
+        repetir = "s";
+        inicio = parseInt(prompt("Digite a tabuada de início (de 1 a 9):"));
+
+
+            for (; repetir.toLowerCase() === "s"; ) {
+            
+            
+
+            if (isNaN(inicio) || inicio < 1 || inicio > 9) {
+                alert("Por favor, digite um número entre 1 e 9.");
+                continue;
+            }
+
+            for (i = inicio; i <= 9; i++) {
+                let resultado = `Tabuada do ${i}:\n`;
+                for (let j = 1; j <= 10; j++) {
+                resultado += `${i} x ${j} = ${i * j}\n`;
+                }
+                alert(resultado);
+            }
+
+            repetir = prompt("Deseja repetir o processo? (s/n):");
+            }
+    </script>
+</body>
+</html>
